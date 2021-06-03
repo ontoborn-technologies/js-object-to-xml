@@ -6,7 +6,7 @@ export const objectToXml = (object: any): string => {
       let children;
 
       if (value == null) {
-        return `<${startTag} xsi:nil="true"/>`;
+        return "";
       }
 
       if (typeof value === 'object' && '@' in value) {
